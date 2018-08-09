@@ -29,10 +29,12 @@ On the upper right, there is a PIC12F508 (U7). There are some smaller SOT23-6 / 
 
 There is a programmer header under the lower battery holder. The pinout appears to be a standard microchip 5-pin programming header, the pinout, counting from the pin near the "-" mark being pin 1, counting to Pin 5 being the "+" mark:
 
-Pin 5 PGEC2 (U7-21, PIC32 ICSP Clock)
-Pin 4 PGED2 (U7-22, PIC32 ICSP Data)
-Pin 3: GND
-Pin 2: VDD
-Pin 1: MCLR (U7-19, PIC32 MCLR)
-
+| Programming Pin | Connection                            |
+|-----------------|---------------------------------------|
+| Pin 5           | PGEC2 (U7-21, PIC32 ICSP Clock)       |
+| Pin 4           | PGED2 (U7-22, PIC32 ICSP Data)        |
+| Pin 3           | GND                                   |
+| Pin 2           | VDD                                   |
+| Pin 1           | MCLR (U7-19, PIC32 MCLR)              |
+ 
 This chip ALSO supports JTAG. The JTAG does not go to an obvious programming header location, so might need some fly wires to test this thing.
